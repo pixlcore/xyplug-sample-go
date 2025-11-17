@@ -5,13 +5,13 @@ This is an example Go module which can be downloaded and executed by a single `g
 Here is the Plugin command for this package:
 
 ```sh
-go run github.com/pixlcore/xyplug-sample-go@v1.0.0
+go run github.com/pixlcore/xyplug-sample-go@v1.0.1
 ```
 
 Here is an example invocation with some test data piped in:
 
 ```sh
-echo '{"xy":1,"test":[2,3]}' | go run github.com/pixlcore/xyplug-sample-go@v1.0.0
+echo '{"xy":1,"test":[2,3]}' | go run github.com/pixlcore/xyplug-sample-go@v1.0.1
 ```
 
 Expected output:
@@ -36,11 +36,11 @@ Note: The pretty-printed JSON key ordering may vary. xyOps will ignore and pass 
 - Ensure you have Go installed and configured (`go version`).
 - Make sure your repository root contains a proper `go.mod` with `module github.com/pixlcore/xyplug-sample-go`.
 - The `main.go` at the repo root provides the `main` package entrypoint required by `go run`.
-- Tag the repo to match the version in the docs (currently `v1.0.0`):
+- Tag the repo to match the version in the docs (currently `v1.0.1`):
 
 ```sh
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.0.1
+git push origin v1.0.1
 ```
 
 # Implementation notes

@@ -5,6 +5,8 @@ import (
     "fmt"
     "io"
     "os"
+
+    "github.com/fatih/color"
 )
 
 func main() {
@@ -20,7 +22,9 @@ func main() {
         }
     }
 
+    // Print a simple green message using the dependency
+    color.Green("Hello from dependency github.com/fatih/color!")
+
     // Always print final JSON message
     fmt.Println(`{ "xy":1, "code":0 }`)
 }
-
