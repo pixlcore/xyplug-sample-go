@@ -46,6 +46,7 @@ git push origin v1.0.1
 # Implementation notes
 
 - Uses Go's standard library `encoding/json` to parse and pretty-print.
+- Pulls in a 3rd party dependency (`github.com/fatih/color`) to prove that it is auto-installed.
 - Reads all input from STDIN; if no input is provided, only the final JSON line is printed.
 - Always prints the final line: `{ "xy":1, "code":0 }` before exiting.
 
